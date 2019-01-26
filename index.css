@@ -56,7 +56,7 @@ ol, ul {
     width: 92%;
     height: 100px;
   }
-  
+
   .topnav a {
     float: right;
     display: block;
@@ -66,21 +66,21 @@ ol, ul {
     text-decoration: none;
     font-size: 17px;
   }
-  
+
   .topnav a:hover {
     background-color: #ddd;
     color: black;
   }
-  
+
   .active {
     background-color: lightskyblue;
     color: white;
   }
-  
+
   .topnav .icon {
     display: none;
   }
-  
+
   @media screen and (max-width: 500px) {
     .topnav a:not(:first-child) {display: none;}
     .topnav a.icon {
@@ -88,7 +88,7 @@ ol, ul {
       display: block;
     }
   }
-  
+
   @media screen and (max-width: 600px) {
     .topnav.responsive {position: relative;}
     .topnav.responsive .icon {
@@ -102,5 +102,25 @@ ol, ul {
       text-align: left;
     }
   }
-  
-  
+
+.board {
+  background: url("https://images.pexels.com/photos/248797/pexels-photo-248797.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500") no-repeat;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.login {
+  background: url("http://web3canvas.com/wp-content/uploads/2014/02/littlevisuals-high-quality-hd-banner-images-stock-photos-free-laptop-topview-download.jpg") no-repeat;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}

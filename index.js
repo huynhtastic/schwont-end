@@ -10,7 +10,7 @@ class Login extends React.Component {
       email: '',
       password: '',
     }
-    
+
     onChange = (e) => {
         this.setState({
         [e.target.name]: e.target.value,
@@ -28,6 +28,7 @@ class Login extends React.Component {
     render() {
       return (
         <div>
+        <div className="login">
           <FormControl
             type="text"
             value={this.state.email}
@@ -45,19 +46,18 @@ class Board extends React.Component {
   render() {
     return (
         <div>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Charles_Schwab_Corporation_logo.svg/2000px-Charles_Schwab_Corporation_logo.svg.png" 
-        width="100" height="100"></img>
+        <div className="board">
         <div class="topnav" id="myTopnav">
         <a href="#delete">Delete User</a>
         <a href="#add">Add User</a>
         <a href="#login">Login</a>
         <a href="#home" class="active">Home</a>
-        
-       
-        
+
+
+
         </div>
       </div>
-      
+
 
     );
   }
@@ -72,4 +72,3 @@ ReactDOM.render(
   </div>,
   document.getElementById('root')
 );
-
