@@ -1,7 +1,7 @@
-import React, { Component } from "react";
+import React, { Component ,FormControl} from "react";
 import ReactDOM from 'react-dom';
 import './index.css';
-import { Button, Input } from 'antd';
+
 import "./Login.css";
 
 
@@ -28,18 +28,12 @@ class Login extends React.Component {
     render() {
       return (
         <div>
-          <p><Input
-            name='email'
-            placeholder='Email'
-            onChange={e => this.onChange(e)}
-            value={this.state.email} /></p>
-          <p><Input
-            name='password'
-            placeholder='Password'
-            type='password'
-            onChange={e => this.onChange(e)}
-            value={this.state.password} /></p>
-          <br />
+          <FormControl
+            type="text"
+            value={this.state.email}
+            placeholder="Enter text"
+            onChange={this.handleChange}
+          />
           <Button >Login</Button>
         </div>
       );
